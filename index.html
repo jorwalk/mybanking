@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<script type="text/javascript" src="//use.typekit.net/ohi7jwd.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+    <body>
+		<div class="container">
+			<header>
+				<a class='logo' href="index.html">ABCBANK</a>
+				<div class="total">
+					<p>Running total for options selected</p>
+					<p class="month">/ Month</p>
+					<div id="counter"><span class="charDollar">$</span><span class="count counter counter-analog"></span></div>
+				</div>
+			</header>
+			<!-- introduction / splash -->
+			<section id="splash">
+				<div class="hero"></div>	
+				<h1>Banking Your Way</h1>
+				<p>At ABC Bank, making banking easier is our top priority. And what could be easier than building your own account that&rsquo;s customized for the way you like to bank! Just select the features you&rsquo;ll use and disregard those you won&rsquo;t.</p>
+				<p>XXXXXX account starts with a base monthly service charge and depending upon your selection, there may be no cost at all. Open your account today with as little as $100.</p>
+				<div class="btn-gold">
+					<a class="btn-gold-anchor">Let&rsquo;s Get Started!</a>
+				</div>
+				<div class="gfx_green"></div>
+			</section>
+			<!-- waiver -->
+			<section id="waiver">
+				<div class="waiverOverlay"></div>
+				<p><strong>How to avoid monthly service charge:</strong> Will you have a monthly direct deposit of $500 or more <strong>or</strong> will you use your debit card 30 times a month? If so, you&rsquo;ll easily avoid the $8 monthly service charge.<i class="serviceCharge"></i></p>
+				<a class="no">No</a>
+				<a class="yes">Yes</a>
+			</section>
+			<!-- Avoid montly service -->
+			<section class="monthlyService">
+				<h2>You can avoid the monthly service charge at any time!</h2>
+				<p>Keep in mind that in any given month if you have a $500 direct deposit, <strong>or</strong> by using your debit card 30 times in a calendar month your monthly service charge will be waived. The number of debit card transactions is at the account level. If you add a joint account holder and both have debit cards, it&rsquo;s the total transactions between both cards. Example: Monday morning you need gas and run inside for coffee. That is 2 transactions!</p>
+				<a class="continue">Continue</a>
+				<!--<a class="goBack">Go Back</a>-->
+			</section>
+			<!-- For Your Information Window -->
+			<section class="fyi" id="fyi-estatement">
+				<div class="closeFyi"></div>
+				<header>
+					<p>For Your Information</p>
+				</header>
+				<div class="content">
+					<p>You&rsquo;ll need Online Banking to receive your <span id="fyiContent"></span>, so we&rsquo;ve selected that for you at no charge.</p>
+				</div>
+			</section>
+			<!-- cart -->
+			<section id="cart">
+				<div class="cartOverlay"></div>
+				<h1>Click to select the features you&rsquo;ll use and disregard those you won&rsquo;t</h1>
+				<h2 class="clickI">Click the <span>i&nbsp;</span> for details and descriptions.</h2>
+				<div id="cartFeatures">
+					<!-- Dabit Card / ATM Card -->
+					<div class="feature" data-title="Debit Card / ATM Card" data-id="debitCard" data-count="two">
+						<div class="front">
+							<h2>Debit Card / ATM Card</h2>
+							<div class="monthly">
+								<p>$0/mo</p>
+								<i class="info"></i>
+							</div>
+						</div>
+						<div class="back scroll-pane">
+							<h3>Debit Cards give you convenient, easy and secure access to your account.</h3>
+							<p>&middot; Use at ATMs and for purchases</p>
+							<p>&middot; Money comes directly out of your checking account</p>
+							<p>&middot; Use anywhere debit is accepted – millions of locations worldwide</p>
+							<p>&middot; Zero Liability for unauthorized purchases</p>
+							<p>&middot; Track purchases in Online Banking</p>
+							<p>&middot; Convenient payment method for monthly bills</p>
+						</div>
+					</div>
+					<!-- Online Banking -->
+					<div class="feature onlineBanking" data-title="Online Banking"  data-id="onlineBanking">
+						<div class="front">
+							<h2>Online Banking</h2>
+							<div class="monthly">
+								<p>$0/mo</p>
+								<i class="info"></i>
+							</div>
+						</div>
+						<div class="back scroll-pane">
+							<h3>Online Banking makes it easy to do your banking from home, the office or wherever you have access to the Internet.</h3>
+							<p>Online Banking is quick, easy, and most importantly secure.</p>
+							<p>&middot; View your account activity and balances</p> 
+							<p>&middot; Pay bills with Online Bill Pay &ndash; it&rsquo;s free.</p> 
+							<p>&middot; Use Mobile Banking to check account balances, view recent transactions and transfer funds between eligible accounts</p>
+							<p>&middot; Choose to receive Alerts to keep informed about account balances, transactions and other important activity</p> 
+							<p>&middot; Transfer funds between your accounts</p> 
+							<p>&middot; View and print images of paid checks</p> 
+							<p>&middot; Eliminate paper - view and save up to 7 years of online statements</p> 
+							<p>&middot; Access electronic copies of your 1099 and certain other tax forms through Online Banking</p>
+							<p>&middot; Order up to seven years of account statements and check images on CD-ROM</p>
+							
+						</div>
+					</div>
+					<!-- E-Statement -->
+					<div class="feature eStatement" data-title="E-Statement"  data-id="eStatement">
+						<div class="front">
+							<h2>E-Statement</h2>
+							<div class="monthly">
+								<p>$0/mo</p>
+								<i class="info"></i>
+							</div>
+						</div>
+						<div class="back scroll-pane">
+							<h3>Manage your account with a digital copy of your statement. Easily accessible online and each month it&rsquo;s delivered to your inbox through the email account of your choice.</h3>
+						</div>
+					</div>
+					<!-- Mobile Banking -->
+					<div class="feature mobileBanking" data-title="Mobile Banking" data-id="mobileBanking">
+						<div class="front">
+							<h2>Mobile Banking</h2>
+							<div class="monthly">
+								<p>$0/mo</p>
+								<i class="info"></i>
+							</div>
+						</div>
+						<div class="back scroll-pane">
+							<h3>Manage your finances anywhere with free Mobile Banking. Download the  iPhone app from the App Store or the Android app from the Google Play Store, then log in to:</h3>
+							<p>&middot; View account balances</p>
+							<p>&middot; View recent transaction activity</p>
+							<p>&middot; Transfer funds between eligible accounts</p>
+							<h4>To help ensure your account information remains private and secure:</h4>
+							<p>&middot; Your account is encrypted with 128-bit data encryption</p> 
+							<p>&middot; You set up security questions and answers in case we need to verify your identity</p> 
+							<p>&middot; You can verify you&rsquo;re at our site with your Personal Security Image and caption</p>
+							<p>&middot; Your account is covered by the same Online Banking Guarantee for personal accounts as when you use Online Banking on your personal computer (see Online Banking Terms and Conditions for more details)</p>
+							
+						</div>
+					</div>
+					<!-- Family ID Restoration -->
+					<div class="feature two" data-title="Family ID Restoration" data-id="familyID" data-count="two">
+						<div class="front">
+							<h2>Family ID Restoration</h2>
+							<div class="monthly">
+								<p>$2/mo</p>
+								<i class="info"></i>
+							</div>
+						</div>
+						<div class="back scroll-pane">
+							<h3>If anyone in your household  becomes a victim of an Identity Theft Event,  and files a police report, this powerful service will be there to help you reclaim your identity and reestablish your credit by assisting you to:</h3>
+							<p>&middot; Notify the three national credit bureaus to place fraud alerts on your credit reports and specialists will review your credit reports to identify evidence of the Identity Theft Event</p>
+							<p>&middot;  Contact banks, credit card companies and merchants to freeze or close any accounts compromised by or resulting from the Identity Theft Event and assist with the replacement of government-issued identification</p>
+							<p>&middot; Provide up to $25,000 in Identity Theft Expense reimbursement to help with the costs associated with restoring your identity</p>
+							
+						</div>
+					</div>
+					<!-- Unlimited Check Supply -->
+					<div class="feature one" data-title="Unlimited Check Supply" data-id="unlimitedCheck">
+						<div class="front">
+							<h2>Unlimited Check Supply</h2>
+							<div class="monthly">
+								<p>$1/mo</p>
+								<i class="info"></i>
+							</div>
+						</div>
+						<div class="back scroll-pane">
+							<h3>Unlimited Check Supply</h3>
+							<p>For as little as $1 per month you will receive an unlimited personalized check supply. For many of our customers, this is a money-saver. You can cancel this service at anytime, but $1 for each of the remaining months may apply if you cancel before 12 months.</p>
+							
+						</div>
+					</div>
+					<!-- Paper Statement -->
+					<div class="feature two" data-title="Paper Statement With Images" data-id="paperStatement" data-count="two">
+						<div class="front">
+							<h2>Paper Statement With Images</h2>
+							<div class="monthly">
+								<p>$2/mo</p>
+								<i class="info"></i>
+							</div>
+						</div>
+						<div class="back scroll-pane">
+							<h3>A detailed statement that includes extra pages with images of your cancelled checks mailed to you with the previous month&rsquo;s account detail.</h3>
+						</div>
+					</div>
+					<!-- Online Bill Pay -->
+					<div class="feature onlinePay" data-title="Online Bill Pay" data-id="onlineBillPay">
+						<div class="front">
+							<h2>Online Bill Pay</h2>
+							<div class="monthly">
+								<p>$0/mo</p>
+								<i class="info"></i>
+							</div>
+						</div>
+						<div class="back scroll-pane">
+							<h3>Online Bill Pay is a quick, easy and secure way to organize and pay your bills any time.</h3>
+							<p>&middot; Pay bills for free with most accounts</p>
+							<p>&middot; Make payments quickly &ndash; it just takes seconds and your payments will be delivered in as little as two days</p>
+							<p>&middot; View your payment history</p>
+							<p>&middot; Schedule payments when it&rsquo;s convenient for you &ndash; make one-time or repeating payments</p>
+							<p>&middot; Receive email reminders when bills are due</p>
+							<p>&middot; Get your bills delivered to you online through E-bills</p>
+							
+						</div>
+					</div>
+					<!-- Foreign ATMs -->
+					<div class="feature five" data-title="Foreign ATMs" data-id="foreignAtms" data-count="five">
+						<div class="front">
+							<h2>Foreign ATMs</h2>
+							<div class="monthly">
+								<p>$5/mo</p>
+								<i class="info"></i>
+							</div>
+						</div>
+						<div class="back scroll-pane">
+							<h3>Foreign ATMs</h3>
+							<p>ATMs are great for withdrawing cash and checking your balance, but sometimes you might not be around an ABC Bank ATM. Don&rsquo;t worry, use an ATM at another Financial Institution and we will refund any fees that are assessed to your account. For this convenient service the monthly fee is $5, that&rsquo;s less than 2 average foreign ATM fees!</p>
+							
+						</div>
+					</div>
+					<!-- Overdraft Services -->
+					<div class="feature" data-title="Overdraft Services" data-id="overdraftService">
+						<div class="front">
+							<h2>Overdraft Services</h2>
+							<div class="monthly">	
+								<p>$0/mo</p>
+								<i class="info"></i>
+							</div>
+						</div>
+						<div class="back scroll-pane">
+							<h3>Mistakes can happen and we have two ways to help you manage through those situations. Protect yourself and your account with Overdraft Services.</h3>
+							<p>&middot; Check Plus Overdraft Protection is an Overdraft Cash Advance from your credit card to cover overdrafts on your checking account.</p>
+							<p>&middot; Overdraft Transfer is a transfer from another checking, savings or money market account (linked account) that you designate to cover overdrafts on your checking account.</p>
+							
+						</div>
+					</div>
+					<!-- Email Alerts -->
+					<div class="feature emailAlerts" data-title="Email Alerts" data-id="emailAlerts">
+						<div class="front">
+							<h2>Email/Text Alerts</h2>
+							<div class="monthly">
+								<p>$0/mo</p>
+								<i class="info"></i>
+							</div>
+						</div>
+						<div class="back scroll-pane">
+							<h3>Alerts allow you to better manage your checking, savings and money market accounts through email and text notifications.</h3>
+							<p>Account Alerts notify you of specific account activity that has taken place within your account including:</p>	
+							<ul>
+								<li><p>&middot; Your balance has fallen below the amount you specified</p></li>
+								<li><p>&middot; Your balance is above the amount you specified</p></li> 
+								<li><p>&middot; A direct deposit has been received</p></li> 
+								<li><p>&middot; A withdrawal has been made greater than the threshold you specified</p></li>
+								<li><p>&middot; Your account has become overdrawn</p></li>
+								<li><p>&middot; Overdraft protection has been activated</p></li>
+							</ul>
+							<p>Security Alerts inform you when specific security-related activity has been updated including:</p>
+							<ul>
+								<li><p>&middot; Online Banking Customer ID</p></li>
+								<li><p>&middot; Online Banking Password</p></li>
+								<li><p>&middot; Address or telephone number</p></li>
+								<li><p>&middot; Status of an alert</p></li>
+							</ul>
+							
+						</div>
+					</div>
+					<!-- Safe Deposit Box -->
+					<div id='safeBox' class="feature safe" data-title="Safe Deposit Box" data-id="safeDeposit">
+						<div class="front">
+							
+						<div class="card first">	
+							<h2>Safe Deposit Box</h2>
+							<div class="monthly two">
+								<p>$2/mo (S)</p>
+								<i class="info"></i>
+							</div>
+						</div>
+						
+						<div class="card second">	
+							<h2>Safe Deposit Box</h2>
+							<div class="monthly five">
+								<p>$5/mo (M)</p>
+								<i class="info"></i>
+							</div>
+						</div>	
+						
+						<div class="card third">						
+							<h2>Safe Deposit Box</h2>
+							<div class="monthly seven">
+								<p>$7/mo (L)</p>
+								<i class="info"></i>
+							</div>
+						</div>
+						
+						</div>
+						<div class="back scroll-pane">
+							<h3><span class="safeSize"></span> Safe Deposit Box</h3>
+							<p>A secure way to store valuables and other personal possessions. If you&rsquo;re interested in a &ldquo;safe&rdquo; place for your valuables, please choose the size that best fits your needs.</p>
+						</div>
+					</div>
+				</div>
+				<!-- done button -->
+				<a class="btn-done">Done</a>
+			</section>
+			<!-- Valuable features step three -->
+			<section id="valuable">
+				<div class="valuableOverlay"></div>
+				<h1>Valuable features you may find beneficial that have a low one time charge</h1>
+				<div class="item">
+					<a id="chk_debitCard" class="check"></a>
+					<p class='personalCard'></p>
+					<p class="personalCardText">
+						<strong>Personalized Debit Card </strong>
+						<i class="info infoPersonalizedDebitCard"></i>
+						- Now your Debit Card can be a reflection of the things that matter most to you. Include the image of your choice on your debit card. $5.00
+					</p>
+				</div>
+				<div class="item">
+					<a id="checkOrder" class="check"></a>
+					<p class='checkOrder'></p>
+					<p>
+						<strong>Check Order</strong>
+						<i class="info infoCheckOrder"></i>
+						- Order checks today and get two boxes for the price of one! $20.00
+					</p>
+				</div>
+				<div class="item">
+					<a id="prepaidCard" class="check"></a>
+					<p class='prepaidCard'></p>
+					<p class="prepaidCardText">
+						<strong>Pre-Paid Card</strong>
+						<i class="info infoPrePaid"></i>
+						- A reloadable prepaid Visa&reg; card that helps you manage your money. Load it with the amount you need, then use it for everyday expenses, holiday spending, or to keep your spending money separate from your primary checking account. $5.95 set up fee.
+					</p>
+				</div>
+				<div class="item">
+					<a id="switchKit" class="check"></a>
+					<p class='switchKit'></p>
+					<p class="switchKitText">
+						<strong>Switch Kit</strong>
+						<i class="info infoSwitchKit"></i>
+						- Do you have automatic payments coming out of a different bank account? Let us move everything for you, you won&rsquo;t have to worry about a thing! $20.00
+					</p>
+				</div>
+				<div class="totalCharge">
+					<p class="">
+						<span id="oneTimeCharge">$0.00</span>
+						/ One Time Charge Total
+					</p>
+				</div>
+				<div class="buttons">
+					<a class="backCart">Go Back</a>
+					<a class="continueSummary">Continue</a>
+				</div>
+			</section>
+			<!-- Summary section step four -->
+			<section id="summary">
+				<div class="summaryOverlay"></div>
+				<h1>Summary</h1>
+				<a class="print">print</a>
+				<div class="monthlyCost">
+					<div class="yesWaiver">
+						<p>
+							<span>$0.00</span>
+							/ month
+						</p>
+						<p>Cost with selected features</p>
+					</div>
+					
+					<div class="separate">
+						<p>OR</p>
+					</div>
+					
+					<div class="noWaiver">
+						<p>
+							<span>$0.00</span>
+							/ month
+						</p>
+						<p>Total cost with selected features if no $500 or more direct deposit, or less than 30 debit card transactions per month.</p>
+					</div>
+				</div>
+				<div class="oneTimeCharge">
+					<p>
+						<span class='oneTimeChargeVal'></span>
+						/ One Time Charge Total
+					</p>
+				</div>
+				<div class="selected">
+					<div class="valuableFeatures">
+						<h3>Valuable Features</h3>
+						<span>at no cost to you</span>
+						<table class="tbl_noCostFeatures"></table>
+					</div>
+					
+					<div class="featuresValuable">
+						<h3>Features You Find Valuable</h3>
+						<span>with a monthly fee</span>
+						<table class="tbl_feeCostFeatures"></table>
+					</div>
+					
+					<div class="oneCharge">
+						<h3>Additional One-Time Charge Items</h3>
+						<table class="tbl_oneTimeCharge"></table>
+					</div>
+				</div>
+				<a class="btn-confirm">Confirm</a>
+				<a class="btn-modify">Modify</a>
+			</section>
+			<section id="congratulations">
+				<div class="closeCongratulations"></div>
+				<h1>Congratulations</h1>
+				<p>You&rsquo;ve selected the options that you will benefit from the most and built your accout for the way you want to bank. We&rsquo;re so glad you&rsquo;ve chosen ABC Bank. Thank you for your business!</p>
+				<p>&middot; Open Account Online - complete our online application now or print your selections to apply online later.</p>
+				<p>&middot; Open in a branch - print your selections and visit your nearest ABC Bank Branch.</p>
+				<p>Welcome to ABC Bank!</p>
+				<a class="btn-locate-branch">Print &amp; Locate a Branch</a>
+				<a class="btn-open-account">Open<br/>Account</a>
+			</section>
+			<footer>
+				<p>&copy;2013 ABCBank. All rights reserved. | Privacy Policy | Terms of Use</p>
+			</footer>
+		
+			<!-- summary Debit Card/ATM Card -->
+			<div class="modalValuable modalDebitCard">
+			<div class="closeModal"></div>
+				<h1>Debit Cards give you convenient, easy and secure access to your account.</h1>
+				<p>&middot; Use at ATMs and for purchases</p>
+				<p>&middot; Money comes directly out of your checking account</p>
+				<p>&middot; Use anywhere debit is accepted – millions of locations worldwide</p>
+				<p>&middot; Zero Liability for unauthorized purchases</p>
+				<p>&middot; Track purchases in Online Banking</p>
+				<p>&middot; Convenient payment method for monthly bills</p>
+			</div>
+			
+			<!-- summary Online Banking -->
+			<div class="modalValuable modalOnlineBanking">
+				<div class="closeModal"></div>
+				<h1>Online Banking makes it easy to do your banking from home, the office or wherever you have access to the Internet.</h1>
+				<p>Online Banking is quick, easy, and most importantly secure.</p>
+				<p>&middot; View your account activity and balances</p> 
+				<p>&middot; Pay bills with Online Bill Pay &ndash; it&rsquo;s free with most accounts</p> 
+				<p>&middot; Use Mobile Banking to check account balances, view recent transactions and transfer funds between eligible accounts</p>
+				<p>&middot; Choose to receive Alerts to keep informed about account balances, transactions and other important activity</p> 
+				<p>&middot; Transfer funds between your accounts</p> 
+				<p>&middot; View and print images of paid checks</p> 
+				<p>&middot; Eliminate paper - view and save up to 7 years of online statements</p> 
+				<p>&middot; Access electronic copies of your 1099 and certain other tax forms through Online Banking</p>
+				<p>&middot; Order up to seven years of account statements and check images on CD-ROM</p>
+			</div>
+			
+			<!-- summary E-Statement -->
+			<div class="modalValuable modalEStatement">
+				<div class="closeModal"></div>
+				<h1>Manage your account with a digital copy of your statement. Easily accessible online and each month it&rsquo;s delivered to your inbox through the email account of your choice.</h1>
+			</div>
+			
+			<!-- summary Mobile Banking -->
+			<div class="modalValuable modalMobileBanking">
+				<div class="closeModal"></div>
+				<h1>Manage your finances anywhere with free Mobile Banking. Download the  iPhone app from the App Store or the Android app from the Google Play Store, then log in to:</h1>
+				<p>&middot; View account balances</p>
+				<p>&middot; View recent transaction activity</p>
+				<p>&middot; Transfer funds between eligible accounts</p>
+				<h4>To help ensure your account information remains private and secure:</h4>
+				<p>&middot; Your account is encrypted with 128-bit data encryption</p> 
+				<p>&middot; You set up security questions and answers in case we need to verify your identity</p> 
+				<p>&middot; You can verify you&rsquo;re at our site with your Personal Security Image and caption</p>
+				<p>&middot; Your account is covered by the same Online Banking Guarantee for personal accounts as when you use Online Banking on your personal computer (see Online Banking Terms and Conditions for more details)</p>
+			</div>
+			
+			<!-- summary Family ID Restoration -->
+			<div class="modalValuable modalFamilyId">
+				<div class="closeModal"></div>
+				<h1>If anyone in your household  becomes a victim of an Identity Theft Event,  and files a police report, this powerful service will be there to help you reclaim your identity and reestablish your credit by assisting you to:</h1>
+				<p>&middot; Notify the three national credit bureaus to place fraud alerts on your credit reports and specialists will review your credit reports to identify evidence of the Identity Theft Event</p>
+				<p>&middot;  Contact banks, credit card companies and merchants to freeze or close any accounts compromised by or resulting from the Identity Theft Event and assist with the replacement of government-issued identification</p>
+				<p>&middot; Provide up to $25,000 in Identity Theft Expense reimbursement to help with the costs associated with restoring your identity</p>
+			</div>
+		
+			<!-- summary Unlimited Check Supply -->
+			<div class="modalValuable modalCheckSupply">
+				<div class="closeModal"></div>
+				<h1>Unlimited Check Supply</h1>
+				<p>For as little as $1 per month you will receive an unlimited personalized check supply. For many of our customers, this is a money-saver. You can cancel this service at anytime, but $1 for each of the remaining months may apply if you cancel before 12 months.</p>
+			</div>
+		
+			<!-- summary Paper Statement -->
+			<div class="modalValuable modalPaperStatement">
+				<div class="closeModal"></div>
+				<h1>Paper Statement</h1>
+				<p>A detailed statement that includes extra pages with images of your cancelled checks mailed to you with the previous month&rsquo;s account detail.</p>
+			</div>
+		
+			<!-- summary Online Bill Pay -->
+			<div class="modalValuable modalBillPay">
+				<div class="closeModal"></div>
+				<h1>Online Bill Pay is a quick, easy and secure way to organize and pay your bills any time.</h1>
+				<p>&middot; Pay bills for free with most accounts</p>
+				<p>&middot; Make payments quickly &ndash; it just takes seconds and your payments will be delivered in as little as two days</p>
+				<p>&middot; View your payment history</p>
+				<p>&middot; Schedule payments when it&rsquo;s convenient for you &ndash; make one-time or repeating payments</p>
+				<p>&middot; Receive email reminders when bills are due</p>
+				<p>&middot; Get your bills delivered to you online through E-bills</p>
+			</div>
+			
+			<!-- summary Foreign ATMs -->
+			<div class="modalValuable modalForeignAtms">
+				<div class="closeModal"></div>
+				<h1>Foreign ATMs</h1>
+				<p>ATMs are great for withdrawing cash and checking your balance, but sometimes you might not be around an ABC Bank ATM. Don&rsquo;t worry, use an ATM at another Financial Institution and we will refund any fees that are assessed to your account. For this convenient service the monthly fee is $5, that&rsquo;s less than 2 average foreign ATM fees!</p>
+			</div>
+		
+			<!-- summary Safe Deposit Box -->
+			<div class="modalValuable modalDepositBox">
+				<div class="closeModal"></div>
+				<h1>Safe Deposit Boxes</h1>
+				<p>We offer safe deposit boxes to customers as a secure way to store valuables and other personal possessions. Safe deposit boxes provide peace of mind because they are maintained within a bank and because they can only be accessed when the customer is present with their key AND a bank employee is present with the bank&rsquo;s guard key. If you&rsquo;re interested in a &ldquo;safe&rdquo; place for your valuables, please choose the size that best fits your needs.</p>
+			</div>
+		
+			<!-- summary Overdraft Services -->
+			<div class="modalValuable modalOverdraft">
+				<div class="closeModal"></div>
+				<h1>Mistakes can happen and we have two ways to help you manage through those situations. Protect yourself and your account with Overdraft Services.</h1>
+				<p>&middot; Check Plus Overdraft Protection is an Overdraft Cash Advance from your credit card to cover overdrafts on your checking account.</p>
+				<p>&middot; Overdraft Transfer is a transfer from another checking, savings or money market account (linked account) that you designate to cover overdrafts on your checking account.</p>
+			</div>
+		
+			<!-- summary Email Alerts -->
+			<div class="modalValuable modalEmailAlerts">
+				<div class="closeModal"></div>
+				<h1>Alerts allow you to better manage your checking, savings and money market accounts through email and text notifications.</h1>
+				<p>Account Alerts notify you of specific account activity that has taken place within your account including:</p>	
+				<ul>
+					<li><p>&middot; Your balance has fallen below the amount you specified</p></li>
+					<li><p>&middot; Your balance is above the amount you specified</p></li> 
+					<li><p>&middot; A direct deposit has been received</p></li> 
+					<li><p>&middot; A withdrawal has been made greater than the threshold you specified</p></li>
+					<li><p>&middot; Your account has become overdrawn</p></li>
+					<li><p>&middot; Overdraft protection has been activated</p></li>
+				</ul>
+				<p>Security Alerts inform you when specific security-related activity has been updated including:</p>
+				<ul>
+					<li><p>&middot; Online Banking Customer ID</p></li>
+					<li><p>&middot; Online Banking Password</p></li>
+					<li><p>&middot; Address or telephone number</p></li>
+					<li><p>&middot; Status of an alert</p></li>
+				</ul>
+			</div>
+			
+			<!-- Modal Window for Personalized Debit Card -->
+			<div class="modalValuable modalPersonalizedDebitCard">
+				<div class="closeModal"></div>
+				<h1>Personalized Debit Card</h1>
+				<p>Now your Debit Card can be a reflection of the things that matter to you most!</p>
+				<p>&middot; Personalize your card</p>
+				<p>&middot; Chose a favorite photo or image</p>
+				<p>&middot; Special snapshot or photo depicting an event such as a wedding, graduation or vacation</p>
+				<p>&middot; Picture of your favorite pet</p>
+				<p>&middot; Image that shows a special hobby or interest</p>
+				<p>&middot; Even your child&rsquo;s unique artwork</p>
+				<p>&middot; Or choose from the options in our online library</p>
+			</div>
+			
+			<!-- Check Order -->
+			<div class="modalValuable modalCheckOrder">
+				<div class="closeModal"></div>
+				<h1>Check Order</h1>
+				<p>Personalize the way you bank with custom checks.</p>
+				<p>&middot; Choose from dozens of designs and optional duplicate formats.</p>
+				<p>&middot; Order and re-order your checks by simply entering your account information.</p> 
+				<p>&middot; Checks are a great back up tool if you don&rsquo;t have enough cash on hand or lose your debit card.</p>
+			</div>
+			
+			<!-- Prepaid Card -->
+			<div class="modalValuable modalPrePaid">
+				<div class="closeModal"></div>				
+				<h1>Pre-Paid Card</h1>
+				<p>It&rsquo;s a reloadable prepaid Visa&reg; card that helps you manage your money. Load it with the amount you need, then use it for everyday expenses, holiday spending, or to keep your spending money separate from your primary checking account.</p>
+				<p><strong>Easy to load</strong></p>
+				<p>&middot; Sign up for Direct Deposit of your paycheck or other income sources</p> 
+				<p>&middot; Use the secure website, the phone or visit any  branch</p> 
+				<p>&middot; Make a transfer using Online Banking or Mobile Banking</p>
+				<p><strong>Convenient</strong></p>
+				<p>&middot; Use anywhere Visa debit cards are accepted</p>
+				<p>&middot; Great for shopping online or by phone</p>
+				<p>&middot; Lets you set a spending limit &ndash; you can only spend what you load on the Card</p>
+				<p>&middot; Maximum card balance: $3,000, unless funds are loaded by direct deposit or other ACH transaction</p>
+				<p>&middot; Maximum cash withdrawal limit: $1,000 per day/ $1,500 per 7 days</p>
+				<p>&middot; Maximum spending limit: $3,000 per day/ $10,000 per month</p>
+				<p><strong>Easy to manage</strong></p>
+				<p>&middot; Balance updates via text alerts</p>
+				<p>&middot; Online access to Card account information and transaction history</p>
+				<p>&middot; You are protected by Visa Zero Liability if your Card is lost or stolen</p>
+				<p>&middot; Visit any  branch TODAY to purchase your card (Card Purchase Fee of $5.95 per Card applies.)</p>
+			</div>
+			
+			<!-- Switch Kit -->
+			<div class="modalValuable modalSwitchKit">
+				<div class="closeModal"></div>				
+				<h1>Switch Kit</h1>
+				<p>You will no longer have to hassle with switching pre-authorized transactions from one financial institution to another. It can be time consuming and difficult. With Switch Kit, you simply authorize us to do the work for you.</p> 
+				<p>&middot; Our concierge contacts you to collect your information.</p> 
+				<p>&middot; We then schedule and send notifications to payers and creditors to move pre-authorized transactions to your new account.</p>
+				<p>&middot; We&rsquo;ll also provide you a schedule and keep you updated throughout the entire process.</p>
+			</div>
+		</div><!-- //.container -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script src="js/plugins.min.js"></script>
+        <script src="js/main.js"></script>
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>-->
+    </body>
+</html>
